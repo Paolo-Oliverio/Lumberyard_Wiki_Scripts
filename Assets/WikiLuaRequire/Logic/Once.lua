@@ -4,6 +4,7 @@ local Once = {
 			component = component,
 			func = func,
 			OnTick = self.OnTick,
+			Reset = self.Reset,
 		}
 		new_inst.tickHandler = TickBus.Connect(new_inst)
 		return new_inst
