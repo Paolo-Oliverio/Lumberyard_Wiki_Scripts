@@ -40,14 +40,11 @@ local Input = {
 	end,
 	Private = {
 		OnPressed = function(self,value) 
-			self.table:OnInput(InputEventNotificationBus.GetCurrentBusId().actionNameCrc,1,value)
-		end,
+			self.table:OnInput(InputEventNotificationBus.GetCurrentBusId().actionNameCrc,1,value)end,
 		OnHeld = function(self,value) 
-			self.table:OnInput(InputEventNotificationBus.GetCurrentBusId().actionNameCrc,2,value)
-		end,	
+			self.table:OnInput(InputEventNotificationBus.GetCurrentBusId().actionNameCrc,2,value)end,	
 		OnReleased = function(self,value) 
-			self.table:OnInput(InputEventNotificationBus.GetCurrentBusId().actionNameCrc,3,value)
-		end,
+			self.table:OnInput(InputEventNotificationBus.GetCurrentBusId().actionNameCrc,3,value)end,
 	},
 }
 return Input
